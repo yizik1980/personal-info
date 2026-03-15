@@ -20,6 +20,7 @@ export const translations = {
       location: '📍 Haifa, Israel',
       cta1: 'Contact Me',
       cta2: 'View Work',
+      downloadCv: 'Download CV',
       scroll: 'SCROLL',
     },
     about: {
@@ -40,7 +41,7 @@ export const translations = {
           bullets: [
             'Backend development using Node.js with NestJS and TypeScript',
             'Development of scalable REST APIs and server-side business logic',
-            'Frontend development with Angular 14 and React.js',
+            'Frontend development with Angular 14/15/17/18 and React.js',
             'Implementation of new features in personal information systems',
             'Integration with MongoDB and SQL Server databases',
             'Designing modular and maintainable backend architecture',
@@ -122,6 +123,7 @@ export const translations = {
       location: '📍 חיפה, ישראל',
       cta1: 'צור קשר',
       cta2: 'ראה עבודות',
+      downloadCv: 'הורד קורות חיים',
       scroll: 'גלול',
     },
     about: {
@@ -142,7 +144,7 @@ export const translations = {
           bullets: [
             'פיתוח Backend באמצעות Node.js עם NestJS ו-TypeScript',
             'פיתוח REST APIs סקיילביליים ולוגיקה עסקית בצד השרת',
-            'פיתוח Frontend עם Angular 14 ו-React.js',
+            'פיתוח Frontend עם Angular 14/15/17/18 ו-React.js',
             'מימוש פיצ\'רים חדשים במערכות מידע אישי',
             'אינטגרציה עם מסדי נתונים MongoDB ו-SQL Server',
             'תכנון ארכיטקטורת Backend מודולרית ובת תחזוקה',

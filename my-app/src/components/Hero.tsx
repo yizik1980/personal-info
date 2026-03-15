@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
 function Typewriter({ texts }: { texts: string[] }) {
@@ -162,6 +162,14 @@ export default function Hero() {
         <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap', marginTop: '32px' }}>
           <a href="#contact" className="btn-glow">{h.cta1}</a>
           <a href="#experience" className="btn-glow" style={{ borderColor: '#7c3aed', color: '#7c3aed' }}>{h.cta2}</a>
+          <a
+            href="/Itzik_Malka_CV.pdf"
+            download="Itzik_Malka_CV.pdf"
+            className="btn-glow"
+            style={{ borderColor: '#22c55e', color: '#22c55e' }}
+          >
+            ⬇ {h.downloadCv}
+          </a>
         </div>
 
         <div style={{ marginTop: '60px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
