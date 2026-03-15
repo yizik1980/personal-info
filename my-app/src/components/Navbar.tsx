@@ -75,7 +75,7 @@ export default function Navbar() {
             (e.currentTarget as HTMLElement).style.boxShadow = 'none';
           }}>
             <span style={{ fontSize: '0.9rem' }}>{lang === 'en' ? '🇮🇱' : '🇺🇸'}</span>
-            {lang === 'en' ? 'עב' : 'EN'}
+            {lang === 'en' ? 'he' : 'EN'}
           </button>
         </li>
       </ul>
@@ -86,7 +86,7 @@ export default function Navbar() {
           background: 'none', border: '1px solid rgba(0,245,255,0.3)',
           color: '#00f5ff', cursor: 'pointer', padding: '4px 10px',
           fontFamily: "'Rajdhani', sans-serif", fontSize: '0.8rem',
-        }}>{lang === 'en' ? '🇮🇱 עב' : '🇺🇸 EN'}</button>
+        }}>{lang === 'en' ? '🇮🇱 he' : '🇺🇸 EN'}</button>
 
         <button onClick={() => setMenuOpen(!menuOpen)} style={{
           background: 'none', border: 'none', cursor: 'pointer',

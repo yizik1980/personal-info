@@ -163,7 +163,7 @@ export default function Hero() {
           <a href="#contact" className="btn-glow">{h.cta1}</a>
           <a href="#experience" className="btn-glow" style={{ borderColor: '#7c3aed', color: '#7c3aed' }}>{h.cta2}</a>
           <a
-            href="/Itzik_Malka_CV.pdf"
+            href={`${process.env.PUBLIC_URL}/Itzik_Malka_CV.pdf`}
             download="Itzik_Malka_CV.pdf"
             className="btn-glow"
             style={{ borderColor: '#22c55e', color: '#22c55e' }}
