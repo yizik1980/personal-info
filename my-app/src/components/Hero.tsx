@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import { trackClick } from '../utils/analytics';
 
 function Typewriter({ texts }: { texts: string[] }) {
   const [idx, setIdx] = useState(0);
@@ -160,13 +161,14 @@ export default function Hero() {
         </p>
 
         <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap', marginTop: '32px' }}>
-          <a href="#contact" className="btn-glow">{h.cta1}</a>
-          <a href="#experience" className="btn-glow" style={{ borderColor: '#7c3aed', color: '#7c3aed' }}>{h.cta2}</a>
+          <a href="#contact" className="btn-glow" onClick={() => trackClick('hero_contact_cta', 'cta')}>{h.cta1}</a>
+          <a href="#experience" className="btn-glow" style={{ borderColor: '#7c3aed', color: '#7c3aed' }} onClick={() => trackClick('hero_view_work_cta', 'cta')}>{h.cta2}</a>
           <a
             href={`${process.env.PUBLIC_URL}/Itzik_Malka_CV.pdf`}
             download="Itzik_Malka_CV.pdf"
             className="btn-glow"
             style={{ borderColor: '#22c55e', color: '#22c55e' }}
+            onClick={() => trackClick('cv_download', 'download', 'CV Download - Hero')}
           >
             ⬇ {h.downloadCv}
           </a>

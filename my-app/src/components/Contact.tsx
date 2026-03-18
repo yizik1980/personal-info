@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import { trackClick } from '../utils/analytics';
 
 const contactItems = [
   { icon: '📧', label: 'Email',    value: 'syizikm@gmail.com',  href: 'mailto:syizikm@gmail.com',                          color: '#00f5ff' },
@@ -65,7 +66,7 @@ export default function Contact() {
                     <a href={item.href} target={item.href.startsWith('http') ? '_blank' : undefined}
                       rel="noopener noreferrer"
                       style={{ color: '#e2e8f0', fontSize: '0.9rem', textDecoration: 'none', display: 'block', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}
-                      onClick={e => e.stopPropagation()}>
+                      onClick={e => { e.stopPropagation(); trackClick(`contact_${item.label.toLowerCase()}`, 'contact'); }}>
                       {displayValue}
                     </a>
                   ) : (
@@ -88,7 +89,7 @@ export default function Contact() {
         </div>
 
         <div style={{ textAlign: 'center' }}>
-          <a href="mailto:syizikm@gmail.com" className="btn-glow">{c.send}</a>
+          <a href="mailto:syizikm@gmail.com" className="btn-glow" onClick={() => trackClick('contact_send_email_btn', 'contact', 'Send Email CTA')}>{c.send}</a>
         </div>
       </div>
 

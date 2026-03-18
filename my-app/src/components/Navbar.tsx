@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import { trackClick } from '../utils/analytics';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -46,6 +47,7 @@ export default function Navbar() {
               fontFamily: lang === 'he' ? "'Rajdhani', sans-serif" : undefined,
               letterSpacing: lang === 'he' ? '0' : undefined,
             }}
+            onClick={() => trackClick(`nav_${t.nav.anchors[i]}`, 'navigation', label)}
             onMouseEnter={e => {
               (e.target as HTMLElement).style.color = '#00f5ff';
               (e.target as HTMLElement).style.textShadow = '0 0 10px rgba(0,245,255,0.6)';
@@ -59,7 +61,7 @@ export default function Navbar() {
 
         {/* Language toggle */}
         <li>
-          <button onClick={toggle} title={lang === 'en' ? 'Switch to Hebrew' : 'עבור לאנגלית'} style={{
+          <button onClick={() => { toggle(); trackClick('lang_toggle', 'engagement', lang === 'en' ? 'EN→HE' : 'HE→EN'); }} title={lang === 'en' ? 'Switch to Hebrew' : 'עבור לאנגלית'} style={{
             background: 'none', border: '1px solid rgba(0,245,255,0.3)',
             color: '#00f5ff', cursor: 'pointer', padding: '5px 12px',
             fontFamily: "'Orbitron', sans-serif", fontSize: '0.68rem',
