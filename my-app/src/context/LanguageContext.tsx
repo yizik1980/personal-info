@@ -96,6 +96,29 @@ export const translations = {
         { degree: 'Professional Course', field: '.NET Development', institution: 'Technion Continuing Studies' },
       ],
     },
+    myWork: {
+      title: 'My Work',
+      sites: [
+        {
+          label: 'Insurance Platform',
+          name: 'FNX – The Phoenix',
+          role: 'Full Stack Developer · 2022 – Present',
+          description: 'Personal insurance management platform. Built scalable APIs and Angular/React interfaces for The Phoenix Group.',
+        },
+        {
+          label: 'Municipal Portal',
+          name: 'CityBiz',
+          role: 'Full Stack Developer · 2016 – 2020',
+          description: 'City business portal for municipal legal and financial systems, built with Angular and Node.js.',
+        },
+        {
+          label: 'Personal Project',
+          name: 'Memory Game',
+          role: 'Side Project',
+          description: 'A React-based memory card game deployed on Render. Built for fun and to sharpen frontend skills.',
+        },
+      ],
+    },
     contact: {
       title: 'Contact',
       subtitle: 'Open to new opportunities and collaborations.',
@@ -198,6 +221,29 @@ export const translations = {
       items: [
         { degree: 'תואר ראשון', field: 'הוראת מדעי המחשב', institution: 'טכניון – חיפה' },
         { degree: 'קורס מקצועי', field: 'פיתוח .NET', institution: 'לימודי המשך – טכניון' },
+      ],
+    },
+    myWork: {
+      title: 'עבודות שלי',
+      sites: [
+        {
+          label: 'פלטפורמת ביטוח',
+          name: 'FNX – הפניקס',
+          role: 'מפתח Full Stack · 2022 – היום',
+          description: 'פלטפורמת ניהול ביטוח אישי. בניית APIs סקיילביליים וממשקי Angular/React עבור קבוצת הפניקס.',
+        },
+        {
+          label: 'פורטל עירוני',
+          name: 'CityBiz',
+          role: 'מפתח Full Stack · 2016 – 2020',
+          description: 'פורטל עסקי עירוני למערכות משפטיות ופיננסיות, בנוי עם Angular ו-Node.js.',
+        },
+        {
+          label: 'פרויקט אישי',
+          name: 'משחק זיכרון',
+          role: 'פרויקט צד',
+          description: 'משחק קלפי זיכרון מבוסס React שפורסם ב-Render. נבנה לשם כיף ולחידוד כישורי Frontend.',
+        },
       ],
     },
     contact: {

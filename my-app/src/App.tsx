@@ -6,6 +6,7 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Education from './components/Education';
+import MyWork from './components/MyWork';
 import Contact from './components/Contact';
 import AccessibilityWidget from './components/AccessibilityWidget';
 
@@ -19,6 +20,7 @@ function App() {
       <Experience />
       <Skills />
       <Education />
+      <MyWork />
       <Contact />
       <AccessibilityWidget />
     </LanguageProvider>
