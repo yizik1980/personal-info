@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 type FontSize = 'normal' | 'large' | 'xlarge';
 
 const FONT_SIZES: Record<FontSize, string> = {
-  normal: '16px',
-  large: '19px',
-  xlarge: '22px',
+  normal: '18px',
+  large: '21px',
+  xlarge: '24px',
 };
 
 const FONT_LABELS: Record<FontSize, string> = {
@@ -14,7 +15,36 @@ const FONT_LABELS: Record<FontSize, string> = {
   xlarge: 'A++',
 };
 
+const labels = {
+  en: {
+    ariaOpen: 'Open accessibility menu',
+    ariaDialog: 'Accessibility menu',
+    title: 'Accessibility',
+    contrast: 'High Contrast',
+    on: 'ON',
+    off: 'OFF',
+    fontSize: 'Font Size',
+    reset: 'Reset All',
+    ariaFont: (l: string) => `Font size: ${l}. Click to change`,
+    ariaReset: 'Reset accessibility settings',
+  },
+  he: {
+    ariaOpen: 'פתח תפריט נגישות',
+    ariaDialog: 'תפריט נגישות',
+    title: 'נגישות',
+    contrast: 'ניגודיות גבוהה',
+    on: 'פעיל',
+    off: 'כבוי',
+    fontSize: 'גודל גופן',
+    reset: 'אפס הכל',
+    ariaFont: (l: string) => `גודל גופן: ${l}. לחץ לשינוי`,
+    ariaReset: 'אפס הגדרות נגישות',
+  },
+};
+
 export default function AccessibilityWidget() {
+  const { lang } = useLanguage();
+  const lbl = labels[lang];
   const [open, setOpen] = useState(false);
   const [highContrast, setHighContrast] = useState(false);
   const [fontSize, setFontSize] = useState<FontSize>('normal');
@@ -92,9 +122,9 @@ export default function AccessibilityWidget() {
       {/* Toggle button */}
       <button
         onClick={() => setOpen(o => !o)}
-        aria-label="פתח תפריט נגישות"
+        aria-label={lbl.ariaOpen}
         aria-expanded={open}
-        title="נגישות"
+        title={lbl.title}
         style={{
           position: 'fixed', bottom: '24px', left: '24px', zIndex: 10000,
           width: '52px', height: '52px', borderRadius: '50%',
@@ -113,7 +143,7 @@ export default function AccessibilityWidget() {
       {open && (
         <div
           role="dialog"
-          aria-label="תפריט נגישות"
+          aria-label={lbl.ariaDialog}
           style={{
             position: 'fixed', bottom: '84px', left: '24px', zIndex: 10000,
             width: '240px',
@@ -135,7 +165,7 @@ export default function AccessibilityWidget() {
             color: '#00f5ff', textTransform: 'uppercase',
             display: 'flex', justifyContent: 'space-between', alignItems: 'center',
           }}>
-            <span>נגישות</span>
+            <span>{lbl.title}</span>
             <span style={{ fontSize: '0.6rem', color: '#475569', letterSpacing: '1px' }}>WCAG AAA</span>
           </div>
 
@@ -151,12 +181,12 @@ export default function AccessibilityWidget() {
               onMouseLeave={e => { if (!highContrast) (e.currentTarget as HTMLElement).style.background = 'none'; }}
             >
               <span style={{ fontSize: '1.1rem' }}>◐</span>
-              <span>ניגודיות גבוהה</span>
+              <span>{lbl.contrast}</span>
               <span style={{
                 marginLeft: 'auto', fontSize: '0.7rem', padding: '2px 7px',
                 border: `1px solid ${highContrast ? '#00f5ff' : '#334155'}`,
                 borderRadius: '20px', color: highContrast ? '#00f5ff' : '#475569',
-              }}>{highContrast ? 'פעיל' : 'כבוי'}</span>
+              }}>{highContrast ? lbl.on : lbl.off}</span>
             </button>
 
             <div style={{ height: '1px', background: 'rgba(255,255,255,0.06)', margin: '4px 0' }} />
@@ -164,13 +194,13 @@ export default function AccessibilityWidget() {
             {/* Font size cycle */}
             <button
               onClick={cycleFont}
-              aria-label={`גודל גופן: ${FONT_LABELS[fontSize]}. לחץ לשינוי`}
+              aria-label={lbl.ariaFont(FONT_LABELS[fontSize])}
               style={{ ...btnBase, ...(fontSize !== 'normal' ? activeStyle : {}) }}
               onMouseEnter={e => { if (fontSize === 'normal') (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.05)'; }}
               onMouseLeave={e => { if (fontSize === 'normal') (e.currentTarget as HTMLElement).style.background = 'none'; }}
             >
               <span style={{ fontSize: '1.1rem' }}>𝐓</span>
-              <span>גודל גופן</span>
+              <span>{lbl.fontSize}</span>
               <div style={{ marginLeft: 'auto', display: 'flex', gap: '4px' }}>
                 {(['normal', 'large', 'xlarge'] as FontSize[]).map(s => (
                   <span key={s} style={{
@@ -190,7 +220,7 @@ export default function AccessibilityWidget() {
             {/* Reset */}
             <button
               onClick={resetAll}
-              aria-label="אפס הגדרות נגישות"
+              aria-label={lbl.ariaReset}
               style={{ ...btnBase, color: '#64748b', fontSize: '0.85rem' }}
               onMouseEnter={e => {
                 (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.05)';
@@ -202,7 +232,7 @@ export default function AccessibilityWidget() {
               }}
             >
               <span style={{ fontSize: '1rem' }}>↺</span>
-              <span>אפס הכל</span>
+              <span>{lbl.reset}</span>
             </button>
           </div>
         </div>
