@@ -6,8 +6,8 @@ export const translations = {
   en: {
     dir: 'ltr' as const,
     nav: {
-      links: ['About', 'Experience', 'Skills', 'Education', 'Contact'],
-      anchors: ['about', 'experience', 'skills', 'education', 'contact'],
+      links: ['About', 'Experience', 'Skills', 'Education', 'My Work', 'Contact'],
+      anchors: ['about', 'experience', 'skills', 'education', 'mywork', 'contact'],
     },
     hero: {
       available: 'AVAILABLE FOR OPPORTUNITIES',
@@ -133,8 +133,8 @@ export const translations = {
   he: {
     dir: 'rtl' as const,
     nav: {
-      links: ['אודות', 'ניסיון', 'כישורים', 'השכלה', 'צור קשר'],
-      anchors: ['about', 'experience', 'skills', 'education', 'contact'],
+      links: ['אודות', 'ניסיון', 'כישורים', 'השכלה', 'עבודות', 'צור קשר'],
+      anchors: ['about', 'experience', 'skills', 'education', 'mywork', 'contact'],
     },
     hero: {
       available: 'פתוח להזדמנויות חדשות',
