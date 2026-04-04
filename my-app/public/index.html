@@ -2,53 +2,98 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#050a14" />
-    <meta
-      name="description"
-      content="Itzik Malka – Senior Full Stack Developer | React, Angular, Node.js"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.svg" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!-- Google Tag Manager -->
 
-    <!-- End Google Tag Manager -->
-    <title>Itzik Malka | Senior Full Stack Developer</title>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-QXX7VP3FL7"
-    ></script>
+    <!-- ===================== Primary SEO ===================== -->
+    <title>Itzik Malka | Senior Full Stack Developer – React, Angular, Node.js</title>
+    <meta name="description" content="Itzik Malka – Senior Full Stack Developer with 10+ years of experience. Expert in React, Angular, Node.js, NestJS and TypeScript. Based in Haifa, Israel. Open to new opportunities." />
+    <meta name="keywords" content="Itzik Malka, Full Stack Developer, React, Angular, Node.js, NestJS, TypeScript, JavaScript, C#, ASP.NET, MongoDB, SQL Server, Haifa, Israel, Senior Developer, Web Developer, Software Engineer" />
+    <meta name="author" content="Itzik Malka" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" href="https://ym.onrender.com/" />
+
+    <!-- ===================== Open Graph (LinkedIn / Facebook) ===================== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ym.onrender.com/" />
+    <meta property="og:title" content="Itzik Malka | Senior Full Stack Developer" />
+    <meta property="og:description" content="Senior Full Stack Developer with 10+ years of experience in React, Angular, Node.js and TypeScript. Based in Haifa, Israel." />
+    <meta property="og:image" content="https://ym.onrender.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Itzik Malka – Senior Full Stack Developer" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="he_IL" />
+    <meta property="og:site_name" content="Itzik Malka – Portfolio" />
+
+    <!-- ===================== Twitter / X Card ===================== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Itzik Malka | Senior Full Stack Developer" />
+    <meta name="twitter:description" content="Senior Full Stack Developer with 10+ years of experience in React, Angular, Node.js and TypeScript. Based in Haifa, Israel." />
+    <meta name="twitter:image" content="https://ym.onrender.com/og-image.png" />
+    <meta name="twitter:image:alt" content="Itzik Malka – Senior Full Stack Developer" />
+
+    <!-- ===================== Geo / Local SEO ===================== -->
+    <meta name="geo.region" content="IL-HA" />
+    <meta name="geo.placename" content="Haifa, Israel" />
+    <meta name="geo.position" content="32.794044;34.989571" />
+    <meta name="ICBM" content="32.794044, 34.989571" />
+
+    <!-- ===================== Theme & PWA ===================== -->
+    <meta name="theme-color" content="#050a14" />
+    <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/favicon.svg" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.svg" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- ===================== JSON-LD Structured Data ===================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Itzik Malka",
+      "alternateName": "Yitzhak Malka",
+      "jobTitle": "Senior Full Stack Developer",
+      "description": "Senior Full Stack Developer with 10+ years of experience building scalable web applications and enterprise systems using React, Angular, Node.js, NestJS and TypeScript.",
+      "url": "https://ym.onrender.com/",
+      "email": "syizikm@gmail.com",
+      "telephone": "+972-52-8508830",
+      "image": "https://ym.onrender.com/og-image.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Haifa",
+        "addressCountry": "IL"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/yizik-malka-3188a52a/"
+      ],
+      "knowsAbout": [
+        "React", "Angular", "Node.js", "NestJS", "TypeScript", "JavaScript",
+        "C#", "ASP.NET MVC", "MongoDB", "SQL Server", "REST API",
+        "CI/CD", "Jenkins", "Docker", "Full Stack Development"
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Technion – Israel Institute of Technology",
+        "address": { "@type": "PostalAddress", "addressLocality": "Haifa", "addressCountry": "IL" }
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "The Phoenix Insurance Group"
+      }
+    }
+    </script>
+
+    <!-- ===================== Google Analytics ===================== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QXX7VP3FL7"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-QXX7VP3FL7");
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-QXX7VP3FL7');
     </script>
   </head>
 
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-    <!-- Google Tag Manager (noscript) -->
-    <!-- End Google Tag Manager (noscript) -->
   </body>
 </html>
