@@ -117,6 +117,12 @@ export const translations = {
           role: 'Side Project',
           description: 'A React-based memory card game deployed on Render. Built for fun and to sharpen frontend skills.',
         },
+        {
+          label: 'Personal Project',
+          name: 'Labyrinth',
+          role: 'Side Project',
+          description: 'An interactive labyrinth / maze game deployed on Render. Built as a personal challenge in frontend game development.',
+        },
       ],
     },
     contact: {
@@ -243,6 +249,12 @@ export const translations = {
           name: 'משחק זיכרון',
           role: 'פרויקט צד',
           description: 'משחק קלפי זיכרון מבוסס React שפורסם ב-Render. נבנה לשם כיף ולחידוד כישורי Frontend.',
+        },
+        {
+          label: 'פרויקט אישי',
+          name: 'מבוך',
+          role: 'פרויקט צד',
+          description: 'משחק מבוך אינטראקטיבי שפורסם ב-Render. נבנה כאתגר אישי בפיתוח משחקי Frontend.',
         },
       ],
     },

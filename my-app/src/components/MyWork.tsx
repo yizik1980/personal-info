@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
 const sites = [
@@ -19,6 +19,12 @@ const sites = [
     url: 'http://memory-game-front-wpzp.onrender.com/',
     color: '#f59e0b',
     icon: '🎮',
+  },
+  {
+    key: 'labyrinth',
+    url: 'https://labiranith.onrender.com/',
+    color: '#22c55e',
+    icon: '🌀',
   },
 ];
 
