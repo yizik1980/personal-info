@@ -26,6 +26,12 @@ const sites = [
     color: '#22c55e',
     icon: '🌀',
   },
+  {
+    key: 'ropesAndLadders',
+    url: 'https://ropes-and-ladders.onrender.com/',
+    color: '#f97316',
+    icon: '🎲',
+  },
 ];
 
 export default function MyWork() {

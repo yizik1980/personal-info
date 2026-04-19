@@ -123,6 +123,12 @@ export const translations = {
           role: 'Side Project',
           description: 'An interactive labyrinth / maze game deployed on Render. Built as a personal challenge in frontend game development.',
         },
+        {
+          label: 'Personal Project',
+          name: 'Ropes & Ladders',
+          role: 'Side Project',
+          description: 'A multiplayer Snakes & Ladders board game built and deployed on Render. A fun frontend project with real-time game logic.',
+        },
       ],
     },
     contact: {
@@ -255,6 +261,12 @@ export const translations = {
           name: 'מבוך',
           role: 'פרויקט צד',
           description: 'משחק מבוך אינטראקטיבי שפורסם ב-Render. נבנה כאתגר אישי בפיתוח משחקי Frontend.',
+        },
+        {
+          label: 'פרויקט אישי',
+          name: 'חבלים וסולמות',
+          role: 'פרויקט צד',
+          description: 'משחק קופסה מרובה שחקנים – נחשים וסולמות – שנבנה ופורסם ב-Render. פרויקט Frontend עם לוגיקת משחק בזמן אמת.',
         },
       ],
     },
