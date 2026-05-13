@@ -85,7 +85,7 @@ const svg = `
     font-family="'Arial Black', 'Arial Bold', Gadget, sans-serif"
     font-size="82" font-weight="900" fill="#e2e8f0"
     filter="url(#nameGlow)"
-    letter-spacing="-1">Itzik Malka</text>
+    letter-spacing="-1">yizik Malka</text>
 
   <!-- Cyan underline below name -->
   <rect x="96" y="305" width="560" height="3" fill="url(#topLine)" opacity="0.7"/>
@@ -98,7 +98,7 @@ const svg = `
   <!-- Location -->
   <text x="100" y="400"
     font-family="'Courier New', Courier, monospace"
-    font-size="16" fill="#94a3b8" letter-spacing="1">&#x1F4CD; Haifa, Israel</text>
+    font-size="16" fill="#94a3b8" letter-spacing="1">&#x1F4CD; hadera, Israel</text>
 
   <!-- Divider -->
   <rect x="96" y="430" width="900" height="1" fill="#1e293b"/>

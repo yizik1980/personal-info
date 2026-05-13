@@ -18,7 +18,7 @@ export const translations = {
         'TypeScript Specialist',
         'asp.net mvc developer',
       ],
-      location: '📍 Haifa, Israel',
+      location: '📍 hadera, Israel',
       cta1: 'Contact Me',
       cta2: 'View Work',
       downloadCv: 'Download CV',
@@ -92,7 +92,7 @@ export const translations = {
     education: {
       title: 'Education',
       items: [
-        { degree: "Bachelor's Degree", field: 'Computer Science Education', institution: 'Technion – Haifa' },
+        { degree: "Bachelor's Degree", field: 'Computer Science Education', institution: 'Technion – hadera' },
         { degree: 'Professional Course', field: '.NET Development', institution: 'Technion Continuing Studies' },
       ],
     },
@@ -157,7 +157,7 @@ export const translations = {
         'מומחה TypeScript',
         'מפתח asp.net mvc',
       ],
-      location: '📍 חיפה, ישראל',
+      location: '📍 חדרה, ישראל',
       cta1: 'צור קשר',
       cta2: 'ראה עבודות',
       downloadCv: 'הורד קורות חיים',
@@ -231,7 +231,7 @@ export const translations = {
     education: {
       title: 'השכלה',
       items: [
-        { degree: 'תואר ראשון', field: 'הוראת מדעי המחשב', institution: 'טכניון – חיפה' },
+        { degree: 'תואר ראשון', field: 'הוראת מדעי המחשב', institution: 'טכניון – חדרה' },
         { degree: 'קורס מקצועי', field: 'פיתוח .NET', institution: 'לימודי המשך – טכניון' },
       ],
     },

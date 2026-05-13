@@ -112,7 +112,7 @@ export default function Hero() {
               width: '160px', height: '160px', borderRadius: '50%', overflow: 'hidden',
               border: '2px solid rgba(0,245,255,0.4)', animation: 'pulse-border 3s ease-in-out infinite',
             }}>
-              <img src="/profile.jpg" alt="Itzik Malka"
+              <img src="/profile.jpg" alt="yizik Malka"
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 onError={e => {
                   const el = e.currentTarget;
@@ -148,7 +148,7 @@ export default function Hero() {
           lineHeight: 1.15, marginBottom: '16px',
           animation: 'glitch 8s ease-in-out infinite', letterSpacing: '2px',
         }}>
-          <span style={{ color: '#e2e8f0' }}>ITZIK </span>
+          <span style={{ color: '#e2e8f0' }}>yizik </span>
           <span style={{ color: '#00f5ff', textShadow: '0 0 30px rgba(0,245,255,0.6)' }}>MALKA</span>
         </h1>
 
@@ -164,8 +164,8 @@ export default function Hero() {
           <a href="#contact" className="btn-glow" onClick={() => trackClick('hero_contact_cta', 'cta')}>{h.cta1}</a>
           <a href="#experience" className="btn-glow" style={{ borderColor: '#7c3aed', color: '#7c3aed' }} onClick={() => trackClick('hero_view_work_cta', 'cta')}>{h.cta2}</a>
           <a
-            href={`${process.env.PUBLIC_URL}/Itzik_Malka_CV.pdf`}
-            download="Itzik_Malka_CV.pdf"
+            href={`${process.env.PUBLIC_URL}/yizik_Malka_CV.pdf`}
+            download="yizik_Malka_CV.pdf"
             className="btn-glow"
             style={{ borderColor: '#22c55e', color: '#22c55e' }}
             onClick={() => trackClick('cv_download', 'download', 'CV Download - Hero')}

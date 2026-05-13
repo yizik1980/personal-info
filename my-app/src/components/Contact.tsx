@@ -14,7 +14,7 @@ export default function Contact() {
   const { t, lang } = useLanguage();
   const c = t.contact;
 
-  const locationValue = lang === 'he' ? 'חיפה, ישראל' : 'Haifa, Israel';
+  const locationValue = lang === 'he' ? 'חדרה, ישראל' : 'hadera, Israel';
 
   const copy = (text: string, label: string) => {
     navigator.clipboard.writeText(text);
@@ -98,11 +98,11 @@ export default function Contact() {
         paddingTop: '32px', textAlign: 'center', color: '#334155',
         fontFamily: "'Share Tech Mono', monospace", fontSize: '0.75rem', letterSpacing: '2px',
       }}>
-        <span>ITZIK MALKA © 2025</span>
+        <span>yizik MALKA © 2025</span>
         <span style={{ margin: '0 12px', color: '#00f5ff', opacity: 0.3 }}>|</span>
         <span>{c.footer}</span>
         <span style={{ margin: '0 12px', color: '#00f5ff', opacity: 0.3 }}>|</span>
-        <span>{lang === 'he' ? 'חיפה, ישראל' : 'HAIFA, ISRAEL'}</span>
+        <span>{lang === 'he' ? 'חדרה, ישראל' : 'hadera, ISRAEL'}</span>
       </div>
 
       <style>{`@media (max-width: 600px) { #contact .container > div:nth-child(3) { grid-template-columns: 1fr !important; } }`}</style>
