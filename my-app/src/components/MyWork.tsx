@@ -32,6 +32,12 @@ const sites = [
     color: '#f97316',
     icon: '🎲',
   },
+  {
+    key: 'codeLearn',
+    url: 'https://code-learn-ddjt.onrender.com/',
+    color: '#a855f7',
+    icon: '💻',
+  },
 ];
 
 export default function MyWork() {

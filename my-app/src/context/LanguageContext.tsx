@@ -129,6 +129,12 @@ export const translations = {
           role: 'Side Project',
           description: 'A multiplayer Snakes & Ladders board game built and deployed on Render. A fun frontend project with real-time game logic.',
         },
+        {
+          label: 'Personal Project',
+          name: 'Code Learn',
+          role: 'Side Project',
+          description: 'An interactive coding learning platform deployed on Render. Built to make learning programming concepts fun and accessible.',
+        },
       ],
     },
     contact: {
@@ -267,6 +273,12 @@ export const translations = {
           name: 'חבלים וסולמות',
           role: 'פרויקט צד',
           description: 'משחק קופסה מרובה שחקנים – נחשים וסולמות – שנבנה ופורסם ב-Render. פרויקט Frontend עם לוגיקת משחק בזמן אמת.',
+        },
+        {
+          label: 'פרויקט אישי',
+          name: 'Code Learn',
+          role: 'פרויקט צד',
+          description: 'פלטפורמת למידת קוד אינטראקטיבית שפורסמה ב-Render. נבנתה כדי להנגיש ולהפוך את לימוד התכנות לחוויה מהנה.',
         },
       ],
     },
